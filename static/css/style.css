@@ -1,0 +1,988 @@
+/* =========================================
+   Google Font
+========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* =========================================
+   Global
+========================================= */
+
+*{
+
+margin:0;
+
+padding:0;
+
+box-sizing:border-box;
+
+font-family:'Poppins',sans-serif;
+
+scroll-behavior:smooth;
+
+}
+
+body{
+
+background:linear-gradient(
+135deg,
+#0f172a,
+#172554,
+#1d4ed8,
+#2563eb
+);
+
+background-size:400% 400%;
+
+animation:gradient 15s ease infinite;
+
+min-height:100vh;
+
+color:white;
+
+overflow-x:hidden;
+
+}
+
+/* Animated Background */
+
+@keyframes gradient{
+
+0%{
+
+background-position:0% 50%;
+
+}
+
+50%{
+
+background-position:100% 50%;
+
+}
+
+100%{
+
+background-position:0% 50%;
+
+}
+
+}
+
+/* =========================================
+Navbar
+========================================= */
+
+.navbar{
+
+padding:20px 0;
+
+}
+
+.navbar-brand{
+
+font-size:30px;
+
+font-weight:700;
+
+color:white !important;
+
+letter-spacing:1px;
+
+}
+
+.nav-link{
+
+margin-left:20px;
+
+font-size:17px;
+
+font-weight:600;
+
+cursor:pointer;
+
+color:white !important;
+
+padding:10px 18px;
+
+border-radius:10px;
+
+transition:.4s;
+
+}
+
+.nav-link:hover{
+
+background:white;
+
+color:#1d4ed8 !important;
+
+transform:translateY(-2px);
+
+}
+
+.nav-link.active{
+
+background:white;
+
+color:#1d4ed8 !important;
+
+}
+
+/* =========================================
+Hero
+========================================= */
+
+.hero{
+
+padding-top:30px;
+
+padding-bottom:20px;
+
+}
+
+.hero-card{
+
+background:rgba(255,255,255,.12);
+
+backdrop-filter:blur(20px);
+
+border:1px solid rgba(255,255,255,.25);
+
+border-radius:25px;
+
+padding:45px;
+
+text-align:center;
+
+box-shadow:0 15px 40px rgba(0,0,0,.25);
+
+animation:fadeUp 1s;
+
+}
+
+.hero-card h1{
+
+font-size:52px;
+
+font-weight:700;
+
+margin-bottom:15px;
+
+}
+
+.hero-card p{
+
+font-size:20px;
+
+opacity:.9;
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* =========================================
+Glass Card
+========================================= */
+
+.glass-card{
+
+background:rgba(255,255,255,.12);
+
+backdrop-filter:blur(20px);
+
+border:1px solid rgba(255,255,255,.20);
+
+border-radius:25px;
+
+padding:35px;
+
+margin-bottom:35px;
+
+box-shadow:0 20px 40px rgba(0,0,0,.20);
+
+transition:.4s;
+
+}
+
+.glass-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 25px 50px rgba(0,0,0,.30);
+
+}
+
+.glass-card h2{
+
+font-size:34px;
+
+font-weight:700;
+
+margin-bottom:15px;
+
+}
+
+.glass-card p{
+
+font-size:17px;
+
+opacity:.9;
+
+}
+
+/* =========================================
+Upload Box
+========================================= */
+
+.upload-box{
+
+margin-top:25px;
+
+}
+
+.form-control{
+
+background:rgba(255,255,255,.12);
+
+border:2px dashed white;
+
+padding:22px;
+
+color:white;
+
+border-radius:18px;
+
+}
+
+.form-control:hover{
+
+background:rgba(255,255,255,.18);
+
+}
+
+.form-control:focus{
+
+background:rgba(255,255,255,.18);
+
+color:white;
+
+box-shadow:none;
+
+border-color:#38bdf8;
+
+}
+
+.form-control::file-selector-button{
+
+background:#0ea5e9;
+
+border:none;
+
+color:white;
+
+padding:10px 18px;
+
+border-radius:10px;
+
+cursor:pointer;
+
+margin-right:15px;
+
+transition:.3s;
+
+}
+
+.form-control::file-selector-button:hover{
+
+background:#0284c7;
+
+}
+
+/* =========================================
+Preview
+========================================= */
+
+.preview-box{
+
+margin-top:30px;
+
+text-align:center;
+
+}
+
+#previewImage{
+
+display:none;
+
+max-width:100%;
+
+max-height:340px;
+
+border-radius:18px;
+
+border:3px solid white;
+
+box-shadow:0 10px 30px rgba(0,0,0,.35);
+
+}
+/* =========================================
+Camera
+========================================= */
+
+.camera-frame{
+
+width:100%;
+
+height:420px;
+
+background:#000;
+
+border-radius:20px;
+
+border:3px solid rgba(255,255,255,.25);
+
+object-fit:cover;
+
+box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+}
+
+/* =========================================
+Buttons
+========================================= */
+
+.btn{
+
+border:none;
+
+border-radius:15px;
+
+padding:15px;
+
+font-size:18px;
+
+font-weight:600;
+
+transition:.35s;
+
+}
+
+.predict-btn{
+
+background:linear-gradient(45deg,#2563eb,#38bdf8);
+
+}
+
+.predict-btn:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 15px 35px rgba(37,99,235,.45);
+
+background:linear-gradient(45deg,#1d4ed8,#0ea5e9);
+
+}
+
+.btn-success{
+
+background:linear-gradient(45deg,#16a34a,#22c55e);
+
+}
+
+.btn-success:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 15px 35px rgba(34,197,94,.45);
+
+}
+
+.btn-danger{
+
+background:linear-gradient(45deg,#dc2626,#ef4444);
+
+}
+
+.btn-danger:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 15px 35px rgba(239,68,68,.45);
+
+}
+
+/* =========================================
+Prediction Card
+========================================= */
+
+.section-title{
+
+font-size:34px;
+
+font-weight:700;
+
+margin-bottom:20px;
+
+text-align:center;
+
+}
+
+.currency-result{
+
+font-size:70px;
+
+font-weight:800;
+
+color:#22c55e;
+
+margin:20px 0;
+
+text-shadow:0 5px 15px rgba(0,0,0,.25);
+
+animation:pulse 2s infinite;
+
+}
+
+@keyframes pulse{
+
+0%{
+
+transform:scale(1);
+
+}
+
+50%{
+
+transform:scale(1.05);
+
+}
+
+100%{
+
+transform:scale(1);
+
+}
+
+}
+
+.confidence-text{
+
+font-size:20px;
+
+margin-bottom:20px;
+
+}
+
+/* =========================================
+Progress
+========================================= */
+
+.confidence-progress{
+
+height:30px;
+
+border-radius:20px;
+
+overflow:hidden;
+
+background:rgba(255,255,255,.18);
+
+}
+
+.progress-bar{
+
+font-size:15px;
+
+font-weight:700;
+
+}
+
+/* =========================================
+Result Image
+========================================= */
+
+.result-image{
+
+text-align:center;
+
+}
+
+.result-image img{
+
+width:100%;
+
+max-height:420px;
+
+object-fit:contain;
+
+border-radius:20px;
+
+border:3px solid rgba(255,255,255,.25);
+
+box-shadow:0 15px 30px rgba(0,0,0,.30);
+
+}
+
+/* =========================================
+Currency Info
+========================================= */
+
+.table{
+
+color:white;
+
+margin-top:20px;
+
+}
+
+.table th{
+
+width:35%;
+
+background:rgba(255,255,255,.10);
+
+color:#38bdf8;
+
+font-weight:600;
+
+}
+
+.table td{
+
+background:rgba(255,255,255,.05);
+
+}
+
+.table-bordered>:not(caption)>*{
+
+border-color:rgba(255,255,255,.15);
+
+}
+
+/* =========================================
+Feature Cards
+========================================= */
+
+.feature-card{
+
+background:rgba(255,255,255,.08);
+
+border-radius:20px;
+
+padding:30px;
+
+text-align:center;
+
+font-size:42px;
+
+transition:.35s;
+
+margin-top:20px;
+
+border:1px solid rgba(255,255,255,.15);
+
+}
+
+.feature-card h5{
+
+margin-top:15px;
+
+font-size:18px;
+
+color:white;
+
+}
+
+.feature-card:hover{
+
+transform:translateY(-8px);
+
+background:rgba(255,255,255,.18);
+
+box-shadow:0 20px 35px rgba(0,0,0,.25);
+
+}
+/* =========================================
+About Section
+========================================= */
+
+.feature-card i{
+
+font-size:45px;
+
+display:block;
+
+margin-bottom:10px;
+
+}
+
+.feature-card p{
+
+font-size:15px;
+
+opacity:.9;
+
+margin-top:8px;
+
+}
+
+/* =========================================
+Disclaimer
+========================================= */
+
+.disclaimer{
+
+background:rgba(255,193,7,.15);
+
+border:1px solid rgba(255,193,7,.35);
+
+color:#fff;
+
+border-radius:20px;
+
+padding:20px;
+
+backdrop-filter:blur(15px);
+
+box-shadow:0 10px 25px rgba(0,0,0,.20);
+
+}
+
+.disclaimer h5{
+
+font-weight:700;
+
+margin-bottom:10px;
+
+}
+
+.disclaimer p{
+
+margin:0;
+
+font-size:15px;
+
+line-height:1.6;
+
+}
+
+/* =========================================
+Footer
+========================================= */
+
+.footer{
+
+text-align:center;
+
+padding:40px 20px;
+
+margin-top:50px;
+
+}
+
+.footer hr{
+
+border:1px solid rgba(255,255,255,.20);
+
+margin-bottom:30px;
+
+}
+
+.footer h4{
+
+font-weight:700;
+
+margin-bottom:15px;
+
+}
+
+.footer p{
+
+margin:5px 0;
+
+opacity:.9;
+
+}
+
+.footer a{
+
+color:#38bdf8;
+
+text-decoration:none;
+
+}
+
+.footer a:hover{
+
+text-decoration:underline;
+
+}
+
+/* =========================================
+Scrollbar
+========================================= */
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#0f172a;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#38bdf8;
+
+border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+background:#0ea5e9;
+
+}
+
+/* =========================================
+Responsive
+========================================= */
+
+@media(max-width:992px){
+
+.hero-card h1{
+
+font-size:40px;
+
+}
+
+.currency-result{
+
+font-size:55px;
+
+}
+
+.camera-frame{
+
+height:320px;
+
+}
+
+.glass-card{
+
+padding:25px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+body{
+
+padding:15px;
+
+}
+
+.navbar-brand{
+
+font-size:24px;
+
+}
+
+.nav-link{
+
+margin-left:8px;
+
+font-size:14px;
+
+padding:8px 10px;
+
+}
+
+.hero-card{
+
+padding:30px 20px;
+
+}
+
+.hero-card h1{
+
+font-size:30px;
+
+}
+
+.hero-card p{
+
+font-size:16px;
+
+}
+
+.glass-card h2{
+
+font-size:26px;
+
+}
+
+.currency-result{
+
+font-size:42px;
+
+}
+
+.camera-frame{
+
+height:260px;
+
+}
+
+.btn{
+
+font-size:16px;
+
+padding:12px;
+
+}
+
+.table{
+
+font-size:14px;
+
+}
+
+.feature-card{
+
+margin-bottom:20px;
+
+}
+
+.footer{
+
+padding:30px 10px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.hero-card h1{
+
+font-size:26px;
+
+}
+
+.currency-result{
+
+font-size:34px;
+
+}
+
+.camera-frame{
+
+height:220px;
+
+}
+
+.progress{
+
+height:22px;
+
+}
+
+.progress-bar{
+
+font-size:12px;
+
+}
+
+}
+
+/* =========================================
+Floating Animation
+========================================= */
+
+.glass-card{
+
+animation:floatCard 5s ease-in-out infinite;
+
+}
+
+@keyframes floatCard{
+
+0%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-4px);
+
+}
+
+100%{
+
+transform:translateY(0px);
+
+}
+
+}
+
+/* =========================================
+Glow Effect
+========================================= */
+
+.hero-card,
+.glass-card{
+
+box-shadow:
+
+0 10px 30px rgba(0,0,0,.25),
+
+0 0 25px rgba(56,189,248,.10);
+
+}
+
+/* =========================================
+Image Hover
+========================================= */
+
+.result-image img,
+#previewImage{
+
+transition:.4s;
+
+}
+
+.result-image img:hover,
+#previewImage:hover{
+
+transform:scale(1.02);
+
+box-shadow:0 20px 40px rgba(0,0,0,.35);
+
+}
